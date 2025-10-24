@@ -1,6 +1,5 @@
 {
   "name": "@hexlet/code",
-
   "type": "module",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Dani-kley/backend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Dani-kley/backend-project-44/actions)",
@@ -10,7 +9,10 @@
   },
   "author": "",
   "license": "ISC",
-"bin": {
-  "brain-games": "bin/brain-games.js"
-}
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
