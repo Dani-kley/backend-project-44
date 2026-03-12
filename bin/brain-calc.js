@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import { runCalcGame } from '../src/calc.js';
+import readlineSync from 'readline-sync'
+import { runCalcGame } from '../src/calc.js'
 
-console.log('Welcome to the Brain Games!');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hello, ${name}!`);
+console.log('Welcome to the Brain Games!')
+const name = readlineSync.question('May I have your name? ')
+console.log(`Hello, ${name}!`)
 
-runCalcGame(name);
+runCalcGame(name)

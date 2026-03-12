@@ -13,13 +13,13 @@ export const runEvenGame = (name) => {
     const number = getRandomNumber()
     console.log(`Question: ${number}`)
 
-    const answer = readlineSync.question('Your answer: ').trim().toLowerCase();
+    const answer = readlineSync.question('Your answer: ').trim().toLowerCase()
     const correctAnswer = isEven(number) ? 'yes' : 'no'
 
     if (answer !== 'yes' && answer !== 'no') {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
-      return;
+      return
     }
 
     if (answer === correctAnswer) {
@@ -34,4 +34,4 @@ export const runEvenGame = (name) => {
   }
 
   console.log(`Congratulations, ${name}!`)
-};
+}
