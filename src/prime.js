@@ -5,7 +5,6 @@ const MAX_ROUNDS = 3
 const getRandomInt = (min, max) =>
   Math.floor(Math.random() * (max - min + 1)) + min
 
-
 const isPrime = (num) => {
   if (num < 2) return false
 
@@ -34,7 +33,7 @@ export const runPrimeGame = (name) => {
 
     if (answer !== correctAnswer) {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
+        `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       )
       console.log(`Let's try again, ${name}!`)
       return

@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync'
 
 const getRandomNumber = () => Math.floor(Math.random() * 100)
-const isEven = (num) => num % 2 === 0
+const isEven = num => num % 2 === 0
 const MAX_ROUNDS = 3
 
 export const runEvenGame = (name) => {
@@ -25,11 +25,11 @@ export const runEvenGame = (name) => {
     if (answer === correctAnswer) {
       console.log('Correct!')
       correctCount += 1
-    } else {
+    }
+    else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
       return
-
     }
   }
 

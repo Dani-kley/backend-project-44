@@ -12,9 +12,15 @@ const getQuestionAndAnswer = () => {
 
   let correctAnswer
   switch (operation) {
-    case '+': correctAnswer = num1 + num2; break
-    case '-': correctAnswer = num1 - num2; break
-    case '*': correctAnswer = num1 * num2; break
+    case '+':
+      correctAnswer = num1 + num2
+      break
+    case '-':
+      correctAnswer = num1 - num2
+      break
+    case '*':
+      correctAnswer = num1 * num2
+      break
   }
 
   return { question: `${num1} ${operation} ${num2}`, correctAnswer }
